@@ -3,6 +3,27 @@
 
 A simple project on how to set up MySQL database with Docker with phpmyadmin as client interface.
 
+<p align="center">
+  <a href="https://github.com/aimanamri/test-docker-app">
+    <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/aimanamri/test-docker-app">
+  </a>
+
+  <a href="https://github.com/aimanamri/test-docker-app">
+    <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/aimanamri/test-docker-app">
+  </a>
+  
+  <a href="https://github.com/aimanamri/test-docker-app/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/aimanamri/test-docker-app?style=social">
+  </a>
+
+  <a href="https://github.com/aimanamri/test-docker-app/commits/main">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/aimanamri/test-docker-app">
+  </a>
+
+  <a href="https://github.com/aimanamri/test-docker-app">
+    <img alt="Repository Size" src="https://img.shields.io/github/repo-size/aimanamri/test-docker-app">
+  </a>
+</p>
 
 
 ## Environment Variables
