@@ -1,6 +1,7 @@
 version: '3'
 services:
   www:
+    restart : always
     build:
       context: ./php
       dockerfile: Dockerfile
@@ -11,6 +12,7 @@ services:
 
   db:
     image: mysql:latest
+    restart : always
     environment:
       MYSQL_DATABASE : "${MYSQL_DATABASE}"
       MYSQL_ROOT_PASSWORD : "${MYSQL_ROOT_PASSWORD}"
@@ -20,6 +22,7 @@ services:
       - "./db:/docker-entrypoint-initdb.d"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
+    restart : always
     ports:
      - 8001:80
     environment:
