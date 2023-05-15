@@ -23,8 +23,6 @@ SET time_zone = "+00:00";
 CREATE DATABASE IF NOT EXISTS `phpmyadmin`;
 USE `phpmyadmin`;
 
-
-REVOKE ALL PRIVILEGES ON *.* FROM 'aimang'@'%'; GRANT ALL PRIVILEGES ON *.* TO 'aimang'@'%'; ALTER USER 'aimang'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
 -- --------------------------------------------------------
 
 --
