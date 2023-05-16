@@ -86,11 +86,11 @@
     $connect = mysqli_connect(
         'db', # service name
         'root', # username
-        'password', # password
+        'root', # password
         $database # db table
     );
 
-    $table_name = "city";
+    $table_name = "world_cities";
     echo "<h1>Database : `$database`</h1>";
     echo "<h4>Table : `$table_name`</h4>";
     $query = isset($_POST['query']) ? $_POST['query'] : "SELECT * FROM $table_name";
@@ -105,15 +105,15 @@
     echo "<tr>";
     echo "<th>ID</th>";
     echo "<th>City</th>";
-    echo "<th>Country</th>";
+    echo "<th>Country Code</th>";
     echo "<th>Coordinate</th>";
     echo "</tr>";
     while ($row = mysqli_fetch_assoc($response)) {
         echo "<tr>";
         echo "<td>".$row['id']."</td>";
-        echo "<td>".$row['city']."</td>";
-        echo "<td>".$row['country']."</td>";
-        echo "<td>".$row['coordinate']."</td>";
+        echo "<td>".$row['name']."</td>";
+        echo "<td>".$row['country_code']."</td>";
+        echo "<td>(".round($row['latitude'],3).",".round($row['longitude'],3).")</td>";
         echo "</tr>";
     }
     echo "</table>";
