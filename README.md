@@ -59,6 +59,12 @@ Start the server using Docker
 ```
 This project will run on `localhost:8001` for phpmyadmin and `localhost:80` for simple webpage.
 
+## Running SQL commands from host
+```bash
+   docker exec -it sql_container bash -l
+```
+Replace `sql_container` with your MySQL Docker container ID.
+
 ## Tech Stack
 
 **Client:** phymyadmin, php
