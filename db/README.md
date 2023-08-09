@@ -6,3 +6,4 @@
 1. ``world`` : dummy database 
 2. ``phpmyadmin`` : for enabling the phpmmyadmin advanced features. If not, there will be a warning.
 3. ``school_db`` : more dummy database
+4. ``supermarket_salesDB`` : dummy sales database  
