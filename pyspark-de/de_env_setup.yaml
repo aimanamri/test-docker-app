@@ -1,0 +1,35 @@
+
+services:
+  pg-database:
+    image: postgres
+    container_name: pg_db
+    restart: always
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_USER: aimang
+      POSTGRES_PASSWORD: strong-password
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    restart: always
+    depends_on:
+      pg-database:
+        condition: service_started
+    ports:
+    - "80:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user-name@domain-name.com
+      PGADMIN_DEFAULT_PASSWORD: strong-password
+    volumes:
+      - ./pgadmin-data:/var/lib/pgadmin
+
+  pyspark-notebook:
+    image: jupyter/pyspark-notebook
+    container_name: notebook
+    restart: always
+    ports:
+    - "8888:8888"
+    volumes:
+      - ./notebook:/home/jovyan/work
