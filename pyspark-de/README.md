@@ -1,6 +1,5 @@
 
-# test-docker-app
-
+# PySpark Notebook with PosgreSQL + PGAdmin
 A simple project on how to set up PySpark with Jupyter notebook. Also, we will be using PosgreSQL server as database and PGAdmin for the interface.
 
 <p align="center">
