@@ -48,7 +48,7 @@ Start the server using Docker
 ```
 This project will run on `localhost:80` for PGAdmin and `localhost:8888` for Jupyter notebook.
 
-## Running SQL commands from host
+## Getting token to login into Jupyter notebook
 ```bash
    docker exec -it notebook sh
 ```
